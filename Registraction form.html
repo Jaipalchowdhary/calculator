@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="../HTML/fontawesome/css/all.css">
+	<style>
+		*
+		{
+			margin:0px;
+		}
+		body
+		{
+			background:blue url("bg.jpeg") no-repeat 0px 0px fixed;
+			background-size:cover;
+		}
+		#reg-form
+		{
+			background:linear-gradient(45deg,rgb(20,52,112),rgb(37,185,117),rgb(89,58,31));
+			padding:30px;
+			width:300px;
+			text-align:center;
+			margin:100px auto;
+		/*	border:2px dotted white;*/
+			border-radius:10px;
+			box-shadow:0 0 10px white;
+			/*position:relative;
+			top:50px;
+			left:200px;*/
+		}
+		.form-group>input[type="text"],
+		.form-group>input[type="password"],
+		.form-group>textarea,
+		.form-group>select
+		{
+			width:230px;
+			height:27px;
+			border:none;
+			outline:none;
+			margin-bottom:17px;
+			background:transparent;
+			font-size:18px;
+			font-family:"comic sans ms",sans-serif;
+			color:white;
+			border-bottom:2px solid white;
+		}
+		::placeholder
+		{
+			color:white;
+		}
+		.form-group>input[type="submit"]
+		{
+			background:linear-gradient(135deg,rgb(20,52,112),rgb(37,185,117),rgb(89,58,31));
+			border:none;
+			outline:none;
+			width:230px;
+			color:white;
+			padding:7px 20px;
+			border-radius:10px;
+		}
+		.form-group>input[type="submit"]:hover
+		{
+			box-shadow:0 0 10px white;
+			cursor:pointer;
+		}
+		#reg-form>#icon
+		{
+			position:relative;
+			top:-80px;
+		}
+		#reg-form>#icon>span
+		{
+			color:white;
+			font-size:100px;
+			border:10px solid rgb(37,185,117);
+			border-radius:100%;
+			box-shadow:0 0 10px white;
+		}
+	</style>
+</head>
+<body>
+	<div id="reg-form">
+		<div id="icon">
+			<span class="fa fa-user-circle"></span>
+		</div>
+		<form>
+			<div class="form-group">
+				<input type="text" placeholder="Enter Username">
+			</div>
+			<div class="form-group">
+				<input type="text" placeholder="Enter Email">
+			</div>
+			<div class="form-group">
+				<input type="password" placeholder="Enter Password">
+			</div>
+			<div class="form-group">
+				<input type="password" placeholder="Enter Confirm Password">
+			</div>
+			<div class="form-group">
+				<textarea placeholder="Description"></textarea>
+			</div>
+			<div class="form-group">
+				<select>
+					<option>Select Designation</option>
+					<option>Team Manager</option>
+					<option>Team Lead</option>
+					<option>Sr.S/w Engg.</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<input type="submit" name="" value="SignUp">
+			</div>
+		</form>
+	</div>
+</body>
+</html>

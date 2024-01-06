@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image Likes</title>
+	<link rel="stylesheet"  href="../MDB/css/bootstrap.css">l
+	<link rel="stylesheet"  href="../MDB/css/mdb.css">
+	<link rel="stylesheet"  href="../fontawesome/css/all.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="col">
+			<div class="card">
+				<div class="card-header">
+					<center>
+					<img src="chicken-lollypop.jpg" class="img-fluid">
+					</center>
+				</div>
+				<div class="card-body">
+					<center>
+					<button class="col-5 btn btn-info " id="inc">Likes<span class="fa-solid fa-thumbs-up" id="count"></span></button>
+					<button class="col-5 btn btn-danger" id="inc1">Dislikes<span  class="fa-solid fa-thumbs-down" id="count1"></span></button>
+				</center>
+				</div>
+				<div class="card-footer text-center">
+					<button class="col btn btn-primary">Total<span id="res"></span></button>
+				
+					
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+<script>
+	let incBtn=document.querySelector('#inc');
+	let inc1Btn=document.querySelector('#inc1');
+	let displayTag=document.querySelector('#count');
+	let displayTag1=document.querySelector('#count1');
+
+	
+	let count=0;
+	let count1=0;
+	
+	displayTag.innerText=count;
+	displayTag1.innerText=count1;
+	
+
+
+	incBtn.addEventListener('click',increment);
+	inc1Btn.addEventListener('click',increment1);
+
+	function increment()
+	{
+		count++;
+		displayTag.innerText=count;
+		
+	}
+	function increment1()
+	{
+		count1++;
+		displayTag1.innerText=count1;
+		
+	}
+
+	let resulBtn=document.querySelector('#res');
+	let resul=0;
+	displayresTag.innerText=resul;
+
+	function result()
+	{
+		resul=increment()+increment1();
+		displayresTag.innerText=resul;
+	}
+	
+</script>
+
+<!-- Script Code -->
+<script src="../MDB/js/jquery.js"></script>
+<script src="../MDB/js/popper.js"></script>
+<script src="../MDB/js/bootstrap.js"></script>
+<script src="../MDB/js/mdb.js"></script>
+</body>
+</body>
+</html>
